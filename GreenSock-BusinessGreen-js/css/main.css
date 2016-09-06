@@ -60,10 +60,6 @@ main { padding: 200px 0 1500px 0; overflow: hidden; }
 
 }
 
-#svg2 {
-  display: block;
-  margin: auto;
-}
 
 .morph2here {
   position: relative;
@@ -86,7 +82,7 @@ main { padding: 200px 0 1500px 0; overflow: hidden; }
   
   margin: 50px auto;
     position: fixed;
-    top: 320px;
+    top: 150px;
     left: 40%;
 }
 #animation i {
@@ -102,6 +98,6 @@ main { padding: 200px 0 1500px 0; overflow: hidden; }
   transform: translate(-50%, -50%);
 }
 
-#square, #hexagon, #almostGear, #completeGear {
+#square, #square1, #square2, #square3, #hexagon1, #hexagon2, #hexagon3, #completeGear1, #completeGear2, #completeGear3 {
   visibility:hidden;
 }

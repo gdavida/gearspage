@@ -13,6 +13,10 @@ body { background: ;
  height: 2400px;
    }
 
+/** {
+  outline: 1px solid orange;
+}
+*/
 .ScrollSceneIndicators { z-index: 9999999 !important; 
 }
 
@@ -52,27 +56,32 @@ header i.fa-angle-double-down:after {
   width: 104px;
 }
 
-/* Create huge scrolling area (imitates height of a page) */
-main { padding: 200px 0 1500px 0; overflow: hidden; }
-
+ /*Create huge scrolling area (imitates height of a page) */
+/*main { padding: 200px 0 1500px 0; overflow: hidden; }
+*/
 /* Styles for wrap for demo */
 .wrap {
 
 }
 
+svg#svg2 {
+  padding-top: 120px;
+}
+
+
 
 .morph2here {
   position: relative;
-  top: 300px;
+  top: 500px;
 }
 
 .morph3here {
   position: relative;
-  top: 600px;
+  top: 800px;
 }
 
-#morph {
-  margin-top: 100px;
+#morph1 {
+  margin-top: 300px;
 }
 
 /* Default Animation Styles */
@@ -82,8 +91,8 @@ main { padding: 200px 0 1500px 0; overflow: hidden; }
   
   margin: 50px auto;
     position: fixed;
-    top: 150px;
-    left: 40%;
+    top: -200px;
+    left: 33%;
 }
 #animation i {
   color: #fff;

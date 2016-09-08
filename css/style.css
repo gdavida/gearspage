@@ -1,3 +1,145 @@
+/***************************
+COLORS
+*****************************/
+/*section:nth-child(1) {
+  background: #2ecc71;
+}
+
+section:nth-child(2) {
+  background: #208e4e;
+}
+
+section:nth-child(3) {
+  background: #176437;
+}
+
+section:nth-child(4) {
+  background: #0d3a20;
+}*/
+
+/** {
+  outline: 1px solid green;
+}*/
+body, html {
+  margin: 0;
+  overflow: hidden;
+  color: #000;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+  background-color: #fff;
+}
+
+.section {
+  text-align: center;
+  display: table;
+  margin-top:43px;
+}
+
+section span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d;
+}
+
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-pagination {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: -48px;
+}
+
+.onepage-pagination li {
+  padding: 0;
+  text-align: center;
+}
+
+.onepage-pagination li a {
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block;
+}
+
+.onepage-pagination li a:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.onepage-pagination li a.active:before {
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: 1px solid white;
+  margin-top: -4px;
+  left: 8px;
+}
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto;
+}
+
+.disabled-onepage-scroll .onepage-wrapper .section {
+  position: relative !important;
+  top: auto !important;
+}
+
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%;
+}
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none;
+}
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit;
+}
+
+p {
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -12,40 +154,12 @@ body {
 }
 */
 
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-}
-
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-  width: auto;
-}
-
-
-
 
 /* MAIN BODY
 -------------------------------------------------- */
 
 /* DIV WITH GEARS MORPHING*/
 .main-container {
-  padding-top: 220px;
 }
 
 
@@ -56,8 +170,10 @@ body {
 -------------------------------------------------- */
 
 .header {
-  height: 800px;
-  padding-top: 220px;
+  padding-top: 100px;
+  z-index: 100;
+  background-color: #fff;
+  margin-top: 0;
 }
 
 
@@ -94,17 +210,47 @@ body {
 
 .featurette {
   height: 700px;
+  border-left: 70px solid lightgray;
 }
 .featurette .title {
     position: relative;
-    left: -60px;
-    background-color: lightgray;
-    padding: 6px 10px;
-    width: 40%;
+    text-align: right;
+/*    transform-origin: center top;
+    transform: translateX(-50%) rotate(-90deg);*/
+}
+
+.title h2 {
+  transform: rotate(-90deg);
+  position: absolute;
+}
+
+.payments h2{
+  top: 50px;
+  left: -100px;
+}
+
+.login h2 {
+  top: 22px;
+  left: -70px;
+}
+
+.database-management h2{
+  top: 140px;
+  left: -190px;
+}
+
+.best-of-software h2 {
+  top: 125px;
+  left: -174px;
+}
+
+.testimonials h2 {
+  top: 65px;
+  left: -115px;
 }
 
 .text-area {
-  padding-top: 400px;
+  margin-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -163,4 +309,55 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
+}
+
+
+svg#svg2 {
+  padding-top: 120px;
+}
+
+
+
+.morph2here {
+  position: relative;
+  top: 500px;
+}
+
+.morph3here {
+  position: relative;
+  top: 800px;
+}
+
+.animation.wrap {
+  margin-top: 100px;
+  position: fixed;
+  bottom: 100%;
+  left: 44%;
+}
+
+/* Default Animation Styles */
+#animation {
+  width: 300px;
+  height: 400px;
+  
+}
+#animation i {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 30px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.hidden, #square, #square1, #square2, #square3, #hexagon1, #hexagon2, #hexagon3, #completeGear1, #completeGear2, #completeGear3 {
+  visibility:hidden;
+}
+
+.red {
+  background-color: red;
 }
